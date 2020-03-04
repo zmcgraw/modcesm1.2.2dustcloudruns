@@ -1,0 +1,73 @@
+
+===============================================================================
+Averaged CESM1.2.2 output from runs used in McGraw et al dust nucleation paper
+
+===============================================================================
+
+Contains 5-year temporal averages of all single-level output variables from
+CESM1.2.2 simulations with modified ice nucleation and MERRA nudged UV-winds
+
+For larger variables involving multiple vertical levels, contact the authors.
+
+Note: Files contain both standard CESM variables and custom variables. The
+      quality of the custom variables is not guaranteed and their use may not
+      be straightforward - contact the authors for more info.
+
+
+Names match those used in Table S1 of the paper's supplement.
+
+Also included are the prescribed surface dust emission files used to produce
+these runs, for the four species that must be prescribed ('dst_a1','dst_a3',
+'num_a1','num_a3') to represent mass and number of emitted dust in fine and
+coarse modes.
+
+===============================================================================
+Simulation variations
+
+===============================================================================
+
+Prescribed dust level:
+present-day dust scenario
+low dust scenario
+high dust scenario (last glacial maximum dust scenario)
+
+Dust direct radiative impacts setting ('ddre'):
+on
+off
+
+Cirrus dust nucleation setting:
+bnu = Barahona & Nenes 2009 scheme with Ullrich et al 2017 depositional nucleation
+bnd = B&N2009 scheme with David et al 2019 pore condensation & freezing nucleation
+
+Accomodation coefficient:
+1.0
+0.1
+
+Updraft settings ('ws')
+warm cloud medium updraft
+warm cloud weak updraft
+warm cloud strong updraft
+mixed-phase cloud temperature regime medium updraft
+mixed-phase cloud temperature regime weak updraft
+mixed-phase cloud temperature regime strong updraft
+cirrus medium updraft
+cirrus weak updraft
+cirrus strong updraft
+
+Mixed-phase cloud regime dust nucleation setting:
+Ullrich et al 2017
+DeMott et al 2015
+Meyers et al 1992 (not aerosol sensitive)
+
+other settings:
+cirrus nucleation on dust off
+high dust refractive index
+low dust refractive index
+
+modifications shared among runs:
+detrainment modified as in Tan et al 2016
+dust optical properties modified to those in Albani et al 2014
+removed constraints on low/high ice crystal numbers in MG08 microphysics
+WBF process efficiency weakened to 1% of default strength
+UV winds nudged to MERRA reanalysis from 2004-2008
+
